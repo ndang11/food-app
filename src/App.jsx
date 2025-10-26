@@ -1,14 +1,17 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import FoodProvider from './context/FoodContext'; 
+import FoodProvider from './context/FoodContext';
 import LandingPage from './components/LandingPage/LandingPage';
 import ProductPage from './components/ProductPage/ProductPage';
-import CheckoutSuccess from './components/CheckoutSuccesPage/CheckoutSuccesPage';// Context stays modular
-import AdminDashboard from './pages/AdminDasboard';
+import CheckoutSuccess from './components/CheckoutSuccesPage/CheckoutSuccesPage';
+import AdminDashboard from './pages/AdminDashboard';
+import Navbar from './components/Navbar/NavBar';
+
 const App = () => {
   return (
     <FoodProvider>
       <BrowserRouter>
+      <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/product/:id" element={<ProductPage />} />
