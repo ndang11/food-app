@@ -5,6 +5,15 @@
     h1 {
         margin: 0;
         font-size: 2rem;
+    }
+}
 
+@media (max-width: 480px) {
+    .logo {
+        padding: 3px;
+
+          h1 {
+        font-size: 1.5rem;
+    }
     }
 }
