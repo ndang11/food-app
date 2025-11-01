@@ -1,0 +1,134 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: blue;
+}
+
+.cartSidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 420px;
+    background: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+.cartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartList {
+    list-style: none;
+    padding: 0;
+    margin: 8px;
+}
+
+.cartItemDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartItem {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.cartItemImage img {
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.cartItemControls {
+    align-items: center;
+    gap: 2px;
+    margin-top: 8px;
+}
+
+.cartItemActions {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.para {
+    font-weight: 500;
+    color: green;
+    margin-left: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.close {
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.quality {
+    color: green;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+
+.del {
+    background-color: #ef5350;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-left: 6px;
+}
+
+.decrease,
+.increase {
+    background-color: #ece2e2;
+    color: black;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-left: 6px;
+}
+
+@media (max-width: 768px) {
+    .cartSidebar {
+        width: 80%;
+    }
+
+    .quality {
+        color: green;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .cartHeader {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+
+    .cartItemControls {
+        display: flex;
+        width: 10%;
+        align-items: center;
+    }
+}

@@ -7,7 +7,17 @@ const LandingPage = () => {
 
   return (
     <div className="landing-container">
-      <h1>Available Foods</h1>
+      <div className="land-1">
+         <div className="landing-image">
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2025/10/18/FN_Thanksgiving-Nuggets---Lifestyle_s4x3.jpg.rend.hgtvcom.1280.960.85.suffix/1760793601226.webp" alt="" />
+      </div>
+      <div className="landing-text">
+        <h1>Welcome to Royal-Food's Paradise</h1>
+        <p>Discover delicious meals and order online with ease!</p>
+      </div>
+      </div>
+
+      <h1 className='head'>Available Foods</h1>
       {foods.length === 0 ? (
         <p>No foods available. Go to /admin to add some.</p>
       ) : (

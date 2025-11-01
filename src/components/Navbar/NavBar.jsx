@@ -1,43 +1,67 @@
+
 import { useContext, useState } from "react";
 import { FoodContext } from "../../context/FoodContext";
+import Header from "../header/Header";
+import Styles from "./NavBar.module.css";
 
 const Navbar = () => {
-  const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useContext(FoodContext);
+  const { cart, removeFromCart, increaseQuantity, decreaseQuantity } =
+    useContext(FoodContext);
   const [showCart, setShowCart] = useState(false);
 
   return (
     <nav>
-      <h2>Food Admin Dashboard</h2>
-
+      <Header />
+     
+      {/* Cart Button */}
       <div>
         <button onClick={() => setShowCart(!showCart)}>
-          🛒 Cart ({cart.reduce((sum, item) => sum + item.quantity, 0)})
+          🛒({cart.reduce((sum, item) => sum + item.quantity, 0)})
         </button>
+      </div>
 
-        {showCart && (
-          <div>
-            <h4>Cart Items</h4>
-            {cart.length === 0 && <p>No items in cart.</p>}
+      {/* Cart Sidebar */}
+      {showCart && (
+        <div className={Styles.cartSidebar}>
+          <div className={Styles.cartHeader}>
+            <h3>Your Cart</h3>
+            <button className={Styles.close}onClick={() => setShowCart(false)}>Close </button>
+          </div>
 
-            <ul>
+          {cart.length === 0 ? (
+            <p>No items in cart.</p>
+          ) : (
+            <ul className={Styles.cartList}>
               {cart.map((item) => (
-                <li key={item.id}>
-                  <strong>{item.name}</strong> - ${item.price}  
-                  <br />
-                  Quantity: {item.quantity}
-                  <div>
-                    <button onClick={() => decreaseQuantity(item.id)}>-</button>
-                    <button onClick={() => increaseQuantity(item.id)}>+</button>
-                    <button onClick={() => removeFromCart(item.id)}>Remove</button>
+                <li key={item.id} className={Styles.cartItem}>
+                  <div className={Styles.cartItemImage}>
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      width="100"
+                      height="100"
+                    />
+                  </div>
+
+                  <div className={Styles.cartItemDetails}>
+                    <strong>{item.name}</strong>
+                    <p className={Styles.para}>${item.price}</p>
+                    <div className={Styles.cartItemControls}>
+                      <button className={Styles.decrease}onClick={() => decreaseQuantity(item.id)}>-</button>
+                      <span className={Styles.quality}>{item.quantity}</span>
+                      <button className={Styles.increase}onClick={() => increaseQuantity(item.id)}>+</button>
+                      <button className={Styles.del}onClick={() => removeFromCart(item.id)}>Remove</button>
+                    </div>
                   </div>
                 </li>
               ))}
             </ul>
-          </div>
-        )}
-      </div>
+          )}
+        </div>
+      )}
     </nav>
   );
 };
 
 export default Navbar;
+

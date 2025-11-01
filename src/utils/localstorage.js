@@ -17,167 +17,167 @@ localStorage.setItem(
   JSON.stringify([
     {
       id: "1",
-      name: "Grilled Chicken Salad",
+      name: "Inasal na manok",
       calories: 350,
       price: 8.99,
-      description: "Fresh grilled chicken with mixed greens and vinaigrette.",
-      image: "https://ifoodreal.com/wp-content/uploads/2021/06/fg-grilled-chicken-salad.jpg"
+      description: "Inasal na manok is a unique Filipino grilled chicken dish which originated in Western Visayas and became the signature dish of the entire region. It employs various chicken cuts marinated in a mixture of vinegar and numerous spices such as lemongrass, garlic, and ginger.",
+      image: "https://www.tasteatlas.com/images/dishes/a093a8930f4f4e8e8bb7237998a54957.jpg?mw=1300"
     },
     {
       id: "2",
-      name: "Veggie Burger",
+      name: "Tom kha gai",
       calories: 400,
       price: 7.49,
-      description: "Plant-based patty with lettuce, tomato, and vegan mayo.",
-      image: "https://png.pngtree.com/background/20250602/original/pngtree-veggie-burger-with-plant-based-patty-lettuce-tomato-and-vegan-mayo-picture-image_16606082.jpg"
+      description: "Tom kha gai is Thailand's delicious national dish coming from the central part of the country and bearing the influence of neighbouring Laos. It is a soup whose name translates to boiled galangal chicken soup, consisting of coconut milk, chicken chunks or shreds, galangal (reddish-brown or pink woody plant related to ginger), lemongrass, garlic, bird's eye chili peppers, kaffir lime leaves, fish sauce, and shiitake mushrooms.",
+      image: "https://www.tasteatlas.com/Images/Dishes/9bf54bc8b6ae431db23b5919b7442ce9.jpg?mw=1300"
     },
     {
       id: "3",
-      name: "Spaghetti Bolognese",
+      name: "Çökertme kebabı",
       calories: 600,
       price: 9.99,
-      description: "Classic Italian pasta with rich meat sauce.",
-      image:"https://img.chefkoch-cdn.de/rezepte/393031127655461/bilder/1585337/crop-960x540/spaghetti-bolognese.jpg"
+      description: "Çökertme kebabı is a traditional kebab variety originating from the Bodrum area. The dish consists of marinated strips of veal that are served with tiny fried potatoes, tomato sauce, and yogurt. The marinade is usually made with milk, olive oil, cumin, salt, and paprika, while the yogurt sauce that's served with the dish is enriched with garlic and salt.",
+      image:"https://www.tasteatlas.com/images/dishes/5744d2fa07604cbb9d9e47559dba14d1.jpg?mw=1300"
     },
     {
       id: "4",
-      name: "Sushi Platter",
+      name: "Rawon",
       calories: 300,
       price: 12.49,
-      description: "Assorted sushi rolls with soy sauce and wasabi.",
-      image:"https://cdn.foodstorm.com/e5184b75632349358c9031c2ef988e6b/images/0ac13014da6f4fd1adee7eb7fc2f70eb_1080w.jpg"
+      description: "Rawon is a unique Indonesian dish with origins in East Java. This flavorful soup is usually made with slow-braised beef and other traditional Indonesian ingredients such as lime leaves, lemongrass, ginger, and chili. However, the key element is buah kluwek, the Indonesian black nut.",
+      image:"https://www.tasteatlas.com/images/dishes/aadf8e1a901242fb864992cf56531a6e.jpg?mw=1300"
     },
     {
       id: "5",
-      name: "Margherita Pizza",
+      name: "Biáng biáng noodles (Yóupō miàn)",
       calories: 550,
       price: 10.99,
       description:
-        "Thin-crust pizza with fresh tomatoes, mozzarella, and basil.",
-        image:"https://safrescobaldistatic.blob.core.windows.net/media/2022/11/PIZZA-MARGHERITA.jpg"
+        "Biáng biáng noodles are a type of hand-pulled noodle from Shaanxi province, famous for their extra-wide, belt-like shape and chewy texture. They are a staple of Xi’an, the provincial capital, and are often regarded as one of the defining foods of the region’s wheat-based cuisine.",
+        image:"https://www.tasteatlas.com/Images/Dishes/f417c973168f4e2bba292267095d9669.jpg?mw=1300"
     },
     {
       id: "6",
-      name: "Beef Burrito",
+      name: "Cochinita pibil",
       calories: 700,
       price: 8.49,
-      description: "Flour tortilla filled with seasoned beef, rice, and beans.",
-      image:"https://mojo.generalmills.com/api/public/content/UslXv1e1gUabOLILabyqwg_gmi_hi_res_jpeg.jpeg?v=c477766e&t=466b54bb264e48b199fc8e83ef1136b4"
+      description: "Cochinita pibil is a Mexican pork dish originating from Yucatan. Pork is marinated in a combination of annatto paste, bitter orange juice, and garlic. It is slowly baked and then shredded and served on tortillas, tacos, or on its own with shallots, pickled onions, salsa, and various roasted vegetables.",
+      image:"https://www.tasteatlas.com/Images/Dishes/23a5477c30b14996a5ba9af61c433e62.jpg?mw=1300"
     },
     {
       id: "7",
-      name: "Chicken Tikka Masala",
+      name: "Châteaubriand",
       calories: 650,
       price: 11.99,
-      description: "Tender chicken in creamy tomato curry with rice.",
-      image:"https://www.recipetineats.com/tachyon/2018/04/Chicken-Tikka-Masala_0-SQ.jpg?resize=500%2C500"
+      description: "Contrary to popular belief, the word Châteaubriand does not refer only to a cut of beef, but to a method used to grill or roast a thick cut of beef tenderloin. The steak was originally prepared by a chef named Montmireil in 1822 for a French author, diplomat, and statesman Francois René Vicomte de Chateaubriand.",
+      image:"https://www.tasteatlas.com/images/dishes/c80f0a36c0ea4b8183ec7b2b270ecb5c.jpg?mw=1300"
     },
     {
       id: "8",
-      name: "Falafel Wrap",
+      name: "Unadon",
       calories: 450,
       price: 6.99,
-      description: "Crispy falafel in pita bread with hummus and veggies.",
-      image:"https://makefoodlovely.com/wp-content/uploads/2025/01/Copycat-Starbucks-Spicy-Falafel-Pocket-Recipe.png"
+      description: "Unadon is a Japanese dish consisting of grilled unagi (eel) fillets placed on top of steamed rice. The eel is grilled kabayaki-style, where the fish is split, gutted, butterflied, cut into squares, skewered, then diped in tare sauce before being grilled.",
+      image:"https://www.tasteatlas.com/images/dishes/11c1ef29a50e47d3a4f64ef4ba57e31c.jpg?mw=1300"
     },
     {
       id: "9",
-      name: "Pad Thai",
+      name: "Khao soi",
       calories: 550,
       price: 9.49,
       description:
-        "Stir-fried rice noodles with tofu, peanuts, and tamarind sauce.",
-        image:"https://www.recipetineats.com/tachyon/2020/01/Chicken-Pad-Thai_9-SQ.jpg"
+        "A signature dish of Northern Thailand, khao soi is a delicious coconut soup in which numerous regional influences were combined to create a truly spectacular dish. The base of the soup is a slightly spicy broth which combines coconut milk and red curry paste.",
+        image:"https://www.tasteatlas.com/Images/Dishes/af467a8acc9b442ba6ca5fc5edf4707b.jpg?mw=1300"
     },
     {
       id: "10",
-      name: "Caesar Salad",
+      name: "Chakhchoukha",
       calories: 320,
       price: 7.99,
       description:
-        "Romaine lettuce with Caesar dressing, croutons, and parmesan.",
-        image:"https://static01.nyt.com/images/2024/09/10/multimedia/JG-Parmesan-Crusted-Salmon-Caesar-Saladrex-kjpb/JG-Parmesan-Crusted-Salmon-Caesar-Saladrex-kjpb-mediumSquareAt3X.jpg"
+        "Chakhchoukha is a flavorful Algerian stew consisting of torn pieces of a thin, round flatbread known as rougag, and marqa – a stew made with diced lamb, tomatoes, chickpeas, onions, and flavorings such as cumin, ras el hanout, caraway, galangal, lavender, and red chili peppers.",
+        image:"https://www.tasteatlas.com/images/dishes/b019ff38fb52455497d53708c972de4e.jpg?mw=1300"
     },
     {
       id: "11",
-      name: "BBQ Ribs",
+      name: "Tonkotsu ramen",
       calories: 900,
       price: 13.99,
-      description: "Slow-cooked pork ribs glazed with BBQ sauce.",
-      image:"https://www.allrecipes.com/thmb/IWVelWahUb2gQxixWJC2N-HXp0k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/22469-Barbecue-Ribs-ddmfs-2x1-210-e799db142f594b00bb317bb357d0971c.jpg"
+      description: "Tonkotsu is a unique style of ramen consisting of an extremely rich, fatty pork broth, fresh noodles, soft-yolk eggs, and tender pork belly that melts in the mouth. It is so popular and special that it could be a dish of its own, not just a ramen style.",
+      image:"https://www.tasteatlas.com/Images/Dishes/a5c3045c128b413bb30a1ba93937ebec.jpg?mw=1300"
     },
     {
       id: "12",
-      name: "Fish and Chips",
+      name: "Butter chicken (Murgh makhani)",
       calories: 750,
       price: 10.49,
-      description: "Crispy fried cod with golden fries and tartar sauce.",
-      image:"https://images.getrecipekit.com/20220707143834-atlantic_cod_fish_chips_recipe_1024x1024.webp?class=16x9"
+      description: "Probably the best known of all Indian dishes, murgh makhani, internationally referred to as butter chicken, is a staple dish at most Indian restaurants. The dish originated in Delhi during the 1950s, when a man named Kundan Lal Gujral opened his restaurant called Moti Mahal.",
+      image:"https://www.tasteatlas.com/images/dishes/01edfe5c71ec4ddf944b209683c65500.jpg?mw=1300"
     },
     {
       id: "13",
-      name: "Tofu Stir Fry",
+      name: "Hyderabadi biryani",
       calories: 400,
       price: 7.49,
-      description: "Tofu and veggies stir-fried in soy-ginger sauce.",
-      image:"https://naturallieplantbased.com/wp-content/uploads/2024/02/peanut-tofu-stir-fry-6-500x500.jpg"
+      description: "Hyderabadi biryani is a South Indian dish consisting of basmati rice, goat, mutton, or chicken meat, lemon, yogurt, onions, and saffron. There are two main varieties of the dish – kachchi (raw) and pakki (cooked). ",
+      image:"https://www.tasteatlas.com/images/dishes/3bd6dfaf53e244dfb7f3ee390447a2f8.jpg?mw=1300"
     },
     {
       id: "14",
-      name: "Avocado Toast",
+      name: "Sinigang",
       calories: 300,
       price: 5.99,
       description:
-        "Sourdough toast topped with smashed avocado and chili flakes.",
-        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc9AIvAc6dkD5GTVhVASi91F4Jc4n7AbOFhw&s"
+        "Sinigang is a sour Filipino soup consisting of sampalok (fruits of the tamarind tree), water spinach, hot peppers, cabbage, broccoli, eggplant, diced tomatoes, sliced onions, ginger, garlic, green beans, fish sauce, and salt. The basic broth usually consists of rice washing, with the addition of a souring agent.",
+        image:"https://www.tasteatlas.com/images/dishes/e98d832284c14b9d8308b88d7438be71.jpg?mw=1300"
     },
     {
       id: "15",
-      name: "Greek Gyro",
+      name: "Chicken karahi (Murgh karahi)",
       calories: 500,
       price: 8.49,
-      description: "Lamb and beef gyro in pita with tzatziki sauce.",
-      image:"https://thegreekfoodie.com/wp-content/uploads/2025/02/Chicken_Gyros_SQ.jpg"
+      description: "Chicken karahi is a poultry dish that is popular in Pakistan and North India. The word karahi in its name refers to a thick and deep cooking-pot similar to a wok in which the dish is prepared. Apart from chicken, the dish is made with red chili powder, cumin, garam masala, ginger, allspice, cardamom, tomatoes, and garlic.",
+      image:"https://www.tasteatlas.com/images/dishes/3faa37365d684db889d9da6aeab6b4bb.jpg?mw=1300"
     },
     {
       id: "16",
-      name: "Miso Ramen",
+      name: "Khachapuri",
       calories: 600,
       price: 9.99,
-      description: "Rich miso broth with noodles, egg, pork, and scallions.",
-      image:"https://soomfoods.com/cdn/shop/articles/45_d115125d-8365-4865-af0e-5a8f42b577af_1600x.png?v=1750100505"
+      description: "This simple cheese bread known as khachapuri is the most famous dish in Georgia. It is traditionally topped with melted cheese, eggs and butter. There are different types of khachapuri, and even though some new cheese varieties such as mozzarella and feta have been incorporated in the dish, the most common additions still include traditional Georgian Sulguni or Imeretian cheese.",
+      image:"https://www.tasteatlas.com/images/dishes/fc4383bf440d437a808745d9c514e160.jpg?mw=1300"
     },
     {
       id: "17",
-      name: "Mac and Cheese",
+      name: "Étouffée",
       calories: 550,
       price: 7.99,
-      description: "Creamy baked macaroni with cheddar cheese.",
-      image:"https://www.onceuponachef.com/images/2024/06/Mac-and-Cheese-17-1200x1800.jpg"
+      description: "Étouffée refers to a group of dishes with Cajun origins which are typically served as a main course (unlike gumbo, which is considered a soup) and are made with one type of shellfish such as shrimp or crawfish that are smothered in a thick sauce.",
+      image:"https://www.tasteatlas.com/images/dishes/db0b99affa154a3cbbfc60b56e99a14f.jpg?mw=1300"
     },
     {
       id: "18",
-      name: "Teriyaki Chicken Bowl",
+      name: "Hünkar beğendi",
       calories: 500,
       price: 8.99,
-      description: "Grilled chicken with rice and teriyaki sauce.",
-      image:"https://somuchfoodblog.com/wp-content/uploads/2023/09/chicken-teriyaki-bowls4.jpg"
+      description: "Hünkar beğendi is a traditional dish consisting of a flavorful lamb stew that is served on top of a creamy roasted eggplant purée. The purée is often thickened with milk and cheese, while the whole dish is sometimes topped with a tomato-based sauce or garnished with freshly chopped parsley.",
+      image:"https://www.tasteatlas.com/images/dishes/ee6bac368afb428eaad361455865d721.jpg?mw=1300"
     },
     {
       id: "19",
-      name: "Banh Mi Sandwich",
+      name: "Sopa de lima",
       calories: 420,
       price: 6.49,
-      description: "Vietnamese baguette with pork, pickled veggies, and herbs.",
-      image:"https://www.dinneratthezoo.com/wp-content/uploads/2019/11/bahn-mi-14.jpg"
+      description: "A traditional dish from Mexico's Yucatan Peninsula, sopa de lima is a spicy, flavorful chicken and tomato soup, contrary to its name that would make one think limes are the main ingredient in the dish. However, the soup is flavored with unique, bittersweet Yucatan limes and spicy habanero peppers.",
+      image:"https://www.tasteatlas.com/images/dishes/dd6cebbd32164a54b26b2b996c8dd329.jpg?mw=1300https://www.tasteatlas.com/images/dishes/dd6cebbd32164a54b26b2b996c8dd329.jpg?mw=1300"
     },
     {
       id: "20",
-      name: "Stuffed Bell Peppers",
+      name: "Smacked cucumber (Pai huang gua)",
       calories: 480,
       price: 7.99,
-      description: "Bell peppers filled with beef, rice, and tomato sauce.",
-      image:"https://tyberrymuch.com/wp-content/uploads/2020/09/vegan-stuffed-peppers-recipe-720x720.jpg"
+      description: "Smacked cucumber is a traditional Asian dish that’s especially popular in Tibet as a snack for picnicking. The dish is usually made with a combination of cucumbers, garlic, sesame oil, black vinegar, and soy sauce. The cucumber is peeled and smacked with a rolling pin so that it’s bruised and starting to break apart.",
+      image:"https://www.tasteatlas.com/images/dishes/af509587e29345f1b99a0a203b620f73.jpg?mw=1300"
     },
 
     
