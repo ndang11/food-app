@@ -19,7 +19,7 @@ const PurchasePage = () => {
       <p>Thank you for your purchase.</p>
 
       <button className={styles.backButton} onClick={() => navigate("/")}>
-         Back to Home
+        Back to Home
       </button>
     </div>
   );

@@ -8,13 +8,13 @@ const LandingPage = () => {
   return (
     <div className="landing-container">
       <div className="land-1">
-         <div className="landing-image">
-        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2025/10/18/FN_Thanksgiving-Nuggets---Lifestyle_s4x3.jpg.rend.hgtvcom.1280.960.85.suffix/1760793601226.webp" alt="" />
-      </div>
-      <div className="landing-text">
-        <h1>Welcome to Royal-Food's Paradise</h1>
-        <p>Discover delicious meals and order online with ease!</p>
-      </div>
+        <div className="landing-image">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2025/10/18/FN_Thanksgiving-Nuggets---Lifestyle_s4x3.jpg.rend.hgtvcom.1280.960.85.suffix/1760793601226.webp" alt="" />
+        </div>
+        <div className="landing-text">
+          <h1>Welcome to Royal-Food's Paradise</h1>
+          <p>Discover delicious meals and order online with ease!</p>
+        </div>
       </div>
 
       <h1 className='head'>Available Foods</h1>
@@ -28,8 +28,10 @@ const LandingPage = () => {
               <div className="food-card-body">
                 <h3>{food.name}</h3>
                 <p className="food-card-description">{food.description}</p>
-                <p><strong>{food.calories} cal</strong></p>
+                <div className="cal">
+                  <p><strong>{food.calories} cal</strong></p>
                 <p className="food-card-price">${food.price.toFixed(2)}</p>
+                </div>
               </div>
             </Link>
           ))}

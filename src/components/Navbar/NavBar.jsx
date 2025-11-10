@@ -11,13 +11,18 @@ const Navbar = () => {
 
   return (
     <nav>
-      <Header />
-     
-      {/* Cart Button */}
-      <div>
-        <button onClick={() => setShowCart(!showCart)}>
-          🛒({cart.reduce((sum, item) => sum + item.quantity, 0)})
-        </button>
+      <div className={Styles.til}>
+        <Header />
+        <div className={Styles.label}>
+        <div>
+          <button onClick={() => setShowCart(!showCart)}>
+            🛒({cart.reduce((sum, item) => sum + item.quantity, 0)})
+          </button>
+        </div>
+          <div className={Styles.admin1}>
+            <a href="/admin">Admin</a>
+          </div>
+        </div>
       </div>
 
       {/* Cart Sidebar */}
@@ -25,7 +30,7 @@ const Navbar = () => {
         <div className={Styles.cartSidebar}>
           <div className={Styles.cartHeader}>
             <h3>Your Cart</h3>
-            <button className={Styles.close}onClick={() => setShowCart(false)}>Close </button>
+            <button className={Styles.close} onClick={() => setShowCart(false)}>Close </button>
           </div>
 
           {cart.length === 0 ? (
@@ -47,10 +52,10 @@ const Navbar = () => {
                     <strong>{item.name}</strong>
                     <p className={Styles.para}>${item.price}</p>
                     <div className={Styles.cartItemControls}>
-                      <button className={Styles.decrease}onClick={() => decreaseQuantity(item.id)}>-</button>
+                      <button className={Styles.decrease} onClick={() => decreaseQuantity(item.id)}>-</button>
                       <span className={Styles.quality}>{item.quantity}</span>
-                      <button className={Styles.increase}onClick={() => increaseQuantity(item.id)}>+</button>
-                      <button className={Styles.del}onClick={() => removeFromCart(item.id)}>Remove</button>
+                      <button className={Styles.increase} onClick={() => increaseQuantity(item.id)}>+</button>
+                      <button className={Styles.del} onClick={() => removeFromCart(item.id)}>Remove</button>
                     </div>
                   </div>
                 </li>

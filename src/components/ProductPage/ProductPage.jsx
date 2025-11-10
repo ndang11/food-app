@@ -21,7 +21,7 @@ const ProductPage = () => {
     <div className="ProductPagee">
       <h2>{food.name}</h2>
 
-      {/* ✅ Display food image */}
+      {/* Display food image */}
       {food.image && (
         <div className="imageContainer">
           <img
@@ -36,7 +36,7 @@ const ProductPage = () => {
       <p>Price: ${food.price}</p>
       <p>{food.description}</p>
 
-      <button onClick={handleBuy}>Buy Now</button>
+      <button onClick={handleBuy}>Purchase Now</button>
 
       <div className="cart-wrapper"></div>
     </div>

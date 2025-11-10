@@ -6,6 +6,7 @@ import ProductPage from './components/ProductPage/ProductPage';
 import PurchasePage from './components/Purchase/PurchasePage';
 import AdminDashboard from './pages/AdminDashboard';
 import Navbar from './components/Navbar/NavBar';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/purchase" element={<PurchasePage />} />
           <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
+          <Footer />
       </BrowserRouter>
     </FoodProvider>
   );

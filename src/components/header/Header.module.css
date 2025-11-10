@@ -1,6 +1,6 @@
 .logo {
     padding: 0.5rem;
-    color: white;
+    color: #fbbf24;
 
     h1 {
         margin: 0;
@@ -12,8 +12,8 @@
     .logo {
         padding: 3px;
 
-          h1 {
-        font-size: 1.5rem;
-    }
+        h1 {
+            font-size: 1.5rem;
+        }
     }
 }
