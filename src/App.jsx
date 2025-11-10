@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import FoodProvider from './context/FoodContext';
 import LandingPage from './components/LandingPage/LandingPage';
