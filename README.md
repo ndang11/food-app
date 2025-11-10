@@ -27,7 +27,7 @@ Project Technical:
 
 
 Link to my demo site:
-[Link](https://ndang11.github.io/food-app/)
+[Link](https://foodne.netlify.app/)
 
 Authors Details
 
