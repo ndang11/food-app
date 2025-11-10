@@ -26,9 +26,12 @@ Project Technical:
 -React.js
 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Link to my demo site:
+[Link](https://ndang11.github.io/food-app/)
 
-## Expanding the ESLint configuration
+Authors Details
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Author: NDANG-KAH A [Frontend Developer]
+
+GitHub: @ndang11
+LinkedIn: @ndang-ambei
