@@ -4,14 +4,12 @@ import { getFromLocalStorage, saveToLocalStorage } from '../utils/localstorage';
 export const FoodContext = createContext();
 
 const FoodProvider = ({ children }) => {
-  // Load foods and cart from localStorage
   const storedFoods = getFromLocalStorage('foods') || [];
   const storedCart = getFromLocalStorage('cart') || [];
 
   const [foods, setFoods] = useState(storedFoods);
   const [cart, setCart] = useState(storedCart);
 
-  // --- FOOD CRUD ---
   const addFood = (food) => {
     const updated = [...foods, food];
     setFoods(updated);
@@ -30,19 +28,16 @@ const FoodProvider = ({ children }) => {
     saveToLocalStorage('foods', updated);
   };
 
-  // --- CART LOGIC ---
   const addToCart = (food) => {
     setCart((prevCart) => {
       const existing = prevCart.find((item) => item.id === food.id);
 
       let updatedCart;
       if (existing) {
-        // If food already in cart, increment quantity
         updatedCart = prevCart.map((item) =>
           item.id === food.id ? { ...item, quantity: item.quantity + 1 } : item
         );
       } else {
-        // Add new food with quantity 1
         updatedCart = [...prevCart, { ...food, quantity: 1 }];
       }
 
@@ -78,7 +73,11 @@ const FoodProvider = ({ children }) => {
     saveToLocalStorage('cart', updated);
   };
 
-  // --- EXPORT CONTEXT VALUES ---
+  const clearCart = () => {
+    setCart([]);
+    saveToLocalStorage('cart', []);
+  };
+
   return (
     <FoodContext.Provider
       value={{
@@ -91,6 +90,7 @@ const FoodProvider = ({ children }) => {
         removeFromCart,
         increaseQuantity,
         decreaseQuantity,
+        clearCart,
       }}
     >
       {children}

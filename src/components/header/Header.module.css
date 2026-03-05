@@ -1,19 +1,43 @@
 .logo {
-    padding: 0.5rem;
-    color: #fbbf24;
-
-    h1 {
-        margin: 0;
-        font-size: 2rem;
-    }
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.25rem 0;
 }
 
-@media (max-width: 480px) {
-    .logo {
-        padding: 3px;
+.logoText {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f7c59f;
+  letter-spacing: -0.5px;
+  transition: color var(--transition-fast);
+}
 
-        h1 {
-            font-size: 1.5rem;
-        }
-    }
+.logoAccent {
+  color: #ff6b35;
+}
+
+.logo:hover .logoText {
+  color: #ff6b35;
+}
+
+/* Tablet: 768px and below */
+@media (max-width: 768px) {
+  .logoText {
+    font-size: 1.4rem;
+  }
+}
+
+/* Mobile: 480px and below */
+@media (max-width: 480px) {
+  .logoText {
+    font-size: 1.25rem;
+  }
+}
+
+/* Large Desktop: 1200px and above */
+@media (min-width: 1200px) {
+  .logoText {
+    font-size: 2rem;
+  }
 }
