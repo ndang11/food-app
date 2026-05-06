@@ -58,6 +58,7 @@ const LandingPage = () => {
                       className={`${Styles.favoriteButton} ${isFavorite(food.id) ? Styles.active : ''}`}
                       onClick={(e) => {
                         e.stopPropagation();
+                        e.preventDefault();
                         toggleFavorite(food.id);
                       }}
                     >

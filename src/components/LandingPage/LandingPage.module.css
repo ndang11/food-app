@@ -240,11 +240,11 @@
 }
 
 .favoriteButton.active {
-  color: var(--primary-color);
+  color: #ff0000;
 }
 
 .favoriteButton.active:hover {
-  color: #e55a2b;
+  color: #cc0000;
 }
 
 .textCenter {
