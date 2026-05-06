@@ -9,6 +9,8 @@ const FoodProvider = ({ children }) => {
 
   const [foods, setFoods] = useState(storedFoods);
   const [cart, setCart] = useState(storedCart);
+  const [favorites, setFavorites] = useState(() => getFromLocalStorage('favorites') || []);
+  const loading = false;
 
   const addFood = (food) => {
     const updated = [...foods, food];
@@ -78,10 +80,23 @@ const FoodProvider = ({ children }) => {
     saveToLocalStorage('cart', []);
   };
 
+  const isFavorite = (id) => favorites.includes(id);
+
+  const toggleFavorite = (id) => {
+    setFavorites((prev) => {
+      const updated = prev.includes(id)
+        ? prev.filter((favId) => favId !== id)
+        : [...prev, id];
+      saveToLocalStorage('favorites', updated);
+      return updated;
+    });
+  };
+
   return (
     <FoodContext.Provider
       value={{
         foods,
+        loading,
         addFood,
         updateFood,
         deleteFood,
@@ -91,6 +106,9 @@ const FoodProvider = ({ children }) => {
         increaseQuantity,
         decreaseQuantity,
         clearCart,
+        favorites,
+        isFavorite,
+        toggleFavorite,
       }}
     >
       {children}

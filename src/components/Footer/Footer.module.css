@@ -1,28 +1,33 @@
 .footer {
-  background-color: #0f172a;
-  color: #f8fafc;
+  background-color: var(--dark-color);
+  color: var(--light-color);
   padding: 3rem 1rem 1rem;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
 .footerContainer {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  max-width: 1100px;
   margin: 0 auto;
 }
 
 .brandSection {
   cursor: pointer;
+  text-align: left;
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #facc15;
+  color: var(--secondary-color);
   margin-bottom: 0.5rem;
+}
+
+.logoAccent {
+  color: var(--primary-color);
 }
 
 .tagline {
@@ -33,42 +38,44 @@
 .linksSection h4,
 .socialSection h4 {
   margin-bottom: 0.7rem;
-  color: #f8fafc;
+  color: var(--light-color);
+  text-align: left;
 }
 
 .linksSection ul {
   list-style: none;
   padding: 0;
+  text-align: left;
 }
 
 .linksSection li {
   margin: 0.4rem 0;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color var(--transition-fast);
 }
 
 .linksSection li:hover {
-  color: #facc15;
+  color: var(--primary-color);
 }
 
 .socialIcons {
   display: flex;
-  justify-content: center;
   gap: 1rem;
 }
 
 .socialIcons a {
-  color: #f8fafc;
+  color: var(--light-color);
   font-size: 1.5rem;
-  transition: color 0.3s ease;
+  transition: color var(--transition-fast);
 }
 
 .socialIcons a:hover {
-  color: #facc15;
+  color: var(--primary-color);
 }
 
 .footerBottom {
-  margin-top: 2rem;
+  max-width: var(--container-max);
+  margin: 2rem auto 0;
   border-top: 1px solid #1e293b;
   padding-top: 1rem;
   font-size: 0.9rem;
@@ -83,5 +90,11 @@
 
   .socialIcons {
     justify-content: center;
+  }
+
+  .linksSection h4,
+  .socialSection h4,
+  .linksSection ul {
+    text-align: center;
   }
 }

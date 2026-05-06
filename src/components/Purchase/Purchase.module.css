@@ -1,7 +1,3 @@
-/* ========================================
-   PURCHASE PAGE - CSS MODULE
-   ======================================== */
-
 /* Variables */
 :root {
   --primary-color: #ff6b35;
@@ -283,10 +279,6 @@
   background-color: var(--dark-color);
   color: white;
 }
-
-/* ========================================
-   RESPONSIVE BREAKPOINTS
-   ======================================== */
 
 /* Tablet: 768px and below */
 @media (max-width: 768px) {

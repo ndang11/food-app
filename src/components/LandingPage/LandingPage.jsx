@@ -1,59 +1,82 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FoodContext } from '../../context/FoodContext';
+import { FaHeart, FaHeartBroken } from "react-icons/fa";
+import Styles from './LandingPage.module.css';
 
 const LandingPage = () => {
-  const { foods } = useContext(FoodContext);
+  const { foods, loading, toggleFavorite, isFavorite } = useContext(FoodContext);
+
+  if (loading) {
+    return (
+      <div className={Styles.landingContainer}>
+        <div className={Styles.landingContent}>
+          <p className={Styles.textCenter}>Loading foods...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div className="landing-container">
-      <section className="hero-section">
-        <div className="hero-background">
-          <img 
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80" 
-            alt="Delicious food background" 
-          />
-        </div>
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <h1 className="hero-title">Welcome to Royal Food's Paradise</h1>
-          <p className="hero-subtitle">
-            Discover delicious meals and order online with ease!
-          </p>
-          <Link to="#foods" className="hero-cta">
-            Browse Menu
-          </Link>
-        </div>
-      </section>
-
-      <section className="foods-section" id="foods">
-        <div className="section-header">
-          <h2 className="section-title">Available Foods</h2>
-        </div>
-        {foods.length === 0 ? (
-          <p className="text-center">No foods available. Go to /admin to add some.</p>
-        ) : (
-          <div className="food-grid">
-            {foods.map(food => (
-              <Link to={`/product/${food.id}`} key={food.id} className="food-card">
-                <div className="food-card-image">
-                  <img src={food.image} alt={food.name} />
-                  {food.calories && (
-                    <span className="food-card-badge">{food.calories} cal</span>
-                  )}
-                </div>
-                <div className="food-card-body">
-                  <h3 className="food-card-title">{food.name}</h3>
-                  <p className="food-card-description">{food.description}</p>
-                  <div className="food-card-footer">
-                    <span className="food-card-price">${food.price.toFixed(2)}</span>
-                  </div>
-                </div>
-              </Link>
-            ))}
+    <div className={Styles.landingContainer}>
+      <div className={Styles.landingContent}>
+        <section className={Styles.heroSection}>
+          <div className={Styles.heroBackground}>
+            <img 
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80" 
+              alt="Delicious food background" 
+            />
           </div>
-        )}
-      </section>
+          <div className={Styles.heroOverlay}></div>
+          <div className={Styles.heroContent}>
+            <h1 className={Styles.heroTitle}>Welcome to Royal Food's Paradise</h1>
+            <p className={Styles.heroSubtitle}>
+              Discover delicious meals and order online with ease!
+            </p>
+            <Link to="/menu" className={Styles.heroCta}>
+              Browse Menu
+            </Link>
+          </div>
+        </section>
+
+        <section className={Styles.foodsSection} id="foods">
+          <div className={Styles.sectionHeader}>
+            <h2 className={Styles.sectionTitle}>Available Foods</h2>
+          </div>
+          {foods.length === 0 ? (
+            <p className={Styles.textCenter}>No foods available. Go to /admin to add some.</p>
+          ) : (
+            <div className={Styles.foodGrid}>
+              {foods.map(food => (
+                <Link to={`/product/${food.id}`} key={food.id} className={Styles.foodCard}>
+                  <div className={Styles.foodCardImage}>
+                    <img src={food.image} alt={food.name} />
+                    {food.calories && (
+                      <span className={Styles.foodCardBadge}>{food.calories} cal</span>
+                    )}
+                    <button 
+                      className={`${Styles.favoriteButton} ${isFavorite(food.id) ? Styles.active : ''}`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleFavorite(food.id);
+                      }}
+                    >
+                      {isFavorite(food.id) ? <FaHeart /> : <FaHeartBroken />}
+                    </button>
+                  </div>
+                  <div className={Styles.foodCardBody}>
+                    <h3 className={Styles.foodCardTitle}>{food.name}</h3>
+                    <p className={Styles.foodCardDescription}>{food.description}</p>
+                    <div className={Styles.foodCardFooter}>
+                      <span className={Styles.foodCardPrice}>{food.price.toFixed(2)}</span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+        </section>
+      </div>
     </div>
   );
 };

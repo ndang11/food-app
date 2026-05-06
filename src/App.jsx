@@ -4,6 +4,7 @@ import LandingPage from './components/LandingPage/LandingPage';
 import ProductPage from './components/ProductPage/ProductPage';
 import PurchasePage from './components/Purchase/PurchasePage';
 import AdminDashboard from './pages/AdminDashboard';
+import MenuPage from './pages/MenuPage';
 import Navbar from './components/Navbar/NavBar';
 import Footer from './components/Footer/Footer';
 
@@ -11,14 +12,15 @@ const App = () => {
   return (
     <FoodProvider>
       <BrowserRouter>
-      <Navbar />
+        <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/menu" element={<MenuPage />} />
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/purchase" element={<PurchasePage />} />
           <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
-          <Footer />
+        <Footer />
       </BrowserRouter>
     </FoodProvider>
   );

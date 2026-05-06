@@ -5,7 +5,7 @@ import Styles from "./Purchase.module.css";
 
 const PurchasePage = () => {
   const navigate = useNavigate();
-  const { cart, clearCart } = useContext(FoodContext);
+  const { cart } = useContext(FoodContext);
   const [orderPlaced, setOrderPlaced] = useState(false);
   const [orderId, setOrderId] = useState("");
 
@@ -18,9 +18,8 @@ const PurchasePage = () => {
   }, [cart, orderPlaced]);
 
   const handleBackToHome = () => {
-    clearCart();
-    navigate("/");
-  };
+  navigate("/");
+};
 
   const handlePrint = () => {
     window.print();
@@ -135,7 +134,7 @@ const PurchasePage = () => {
 
         <div className={Styles.orderActions}>
           <button className={Styles.homeButton} onClick={handleBackToHome}>
-            ← Back to Home
+            Back to Home
           </button>
           <button className={Styles.printButton} onClick={handlePrint}>
             🖨️ Print Receipt

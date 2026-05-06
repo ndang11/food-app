@@ -12,7 +12,7 @@ const Footer = () => {
         {/* Logo / Brand */}
         <div className={Styles.brandSection}>
           <h2 className={Styles.logo} onClick={() => navigate("/")}>
-            🍽️ Royal-Food
+            Royal<span className={Styles.logoAccent}>Food</span>
           </h2>
           <p className={Styles.tagline}>
             Discover. Taste. Enjoy your favorite meals anytime!
@@ -24,7 +24,7 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li onClick={() => navigate("/")}>Home</li>
-            <li onClick={() => navigate("/")}>Menu</li>
+            <li onClick={() => navigate("/menu")}>Menu</li>
             <li onClick={() => navigate("/")}>About</li>
             <li onClick={() => navigate("/")}>Contact</li>
           </ul>

@@ -292,10 +292,6 @@
   background-color: #e55a2b;
 }
 
-/* ========================================
-   RESPONSIVE BREAKPOINTS
-   ======================================== */
-
 /* Tablet: 768px and below */
 @media (max-width: 768px) {
   .productPage {
